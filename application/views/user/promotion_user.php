@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="hots-bar">
 			<img src="<?php echo base_url(); ?>assist/img/bgsetmain.png">
 				<div class="headinfo" data-aos="zoom-in-left">
-					กกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกก
+					ปาร์ค
 				</div>
 				<div class="text-bar" data-aos="zoom-in-left">
 					<div>
