@@ -9,6 +9,7 @@ class Gameshope extends CI_Controller {
     }
 	public function index()
 	{
+		$data['showimg'] = $this->gameshop_model->showimg();
 		$data['shownews'] = $this->gameshop_model->shownews();
 		$data['showgame'] = $this->gameshop_model->showdata();
 		$data['showgroup'] = $this->gameshop_model->showgroup();
@@ -38,12 +39,12 @@ class Gameshope extends CI_Controller {
 
 		$data['showgame'] = $this->gameshop_model->showdata();
 		$data['showgroup'] = $this->gameshop_model->showgroup();
+		$data['showimg'] = $this->gameshop_model->showimg();
 		$this->template->load('user/store_user','custom/footer','custom/navbar','custom/assist','custom/aos_time','custom/order',$data);
 	}
 	public function store_viwe($id_game)
 	{
 		$data['rsedit'] = $this->gameshop_model->read($id_game);
-
 		$this->template->load('user/store_viwe_user','custom/footer','custom/navbar','custom/assist','custom/aos_time','custom/order',$data);
 	}
 

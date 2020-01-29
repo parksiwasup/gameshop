@@ -80,5 +80,29 @@ class gameshop_model extends CI_Model
         return FALSE;
     }
 
+    public function showimg()
+    {
+        $this->db->select('*');
+        $this->db->from('tb_img');
+        $query = $this->db->get();
+        $res = $query->result();
+        return $res;
+    }
+
+    public function readimg($id_img)
+    {
+        $this->load->library('session');
+        $this->load->model('gameshop_model');
+        $this->db->select('*');
+        $this->db->from('tb_img');
+        $this->db->join('tb_game','tb_img.id_game = tb_game.g_img_s', 'inner');
+        $this->db->where('g_img_s', $id_img);
+        $query = $this->db->get();
+        if ($query->num_rows() > 0) {
+            $data = $query->row();
+            return $data;
+        }
+        return FALSE;
+    }
 
 }

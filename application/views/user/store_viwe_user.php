@@ -62,7 +62,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<a href="#"><?php echo $rsedit->vdio_game;?></a>
 		</div>
 		<div class="box-model">
-		<img src="<?php echo base_url('assist/img/game/reviewgame');?>/<?php echo $rsedit->g_img_s;?>">
+		<img src="<?php echo base_url('assist/img/game/reviewgame');?>/<?php echo $rsedit->img_s_1;?>">
 		</div>
 		<!-- <div class="box-model">
 			<img src="<?php echo base_url(); ?>assist/img/profile/s1-s2.jpg">
